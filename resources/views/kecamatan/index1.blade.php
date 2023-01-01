@@ -7,8 +7,8 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-header">
-      <h2>Constructions</h2>
-      <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+      <h2>Tracing Ambulance</h2>
+      {{-- <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p> --}}
     </div>
 
     
@@ -24,8 +24,8 @@
                 <h4 class="card-title">Kecamatan:&ensp;{{ $kec->nama_kec }}</h4>
                 <p>Desa:&ensp;{{ $kec->nama_desa }}</p>
                 <p>Sopir:&ensp;{{ $kec->nama }}</p>
-                <p>Telpon:&ensp;{{ $kec->no_hp1 }}</p>
-                <p>Telpon:&ensp;{{ $kec->no_hp2 }}</p>
+                <i class="bi bi-telephone-fill">&ensp;{{ $kec->no_hp1 }}</i><br>
+                <i class="bi bi-telephone-fill">&ensp;{{ $kec->no_hp2 }}</i>
               </div>
             </div>
           </div>

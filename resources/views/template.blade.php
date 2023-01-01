@@ -25,6 +25,8 @@
   <link href="/template/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="/template/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/template/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
 
   <!-- Template Main CSS File -->
   <link href="/template/assets/css/main.css" rel="stylesheet">
@@ -46,26 +48,18 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <h1>Tracing Ambulance<span>.</span></h1>
       </a>
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-       
-      </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/template/assets/img/breadcrumbs-bg.jpg');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/template/assets/img/bintang.png');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <form class="form" method="get" action="{{ route('search') }}">
           <div class="form-group w-100 mb-3">
-              <label for="search" class="d-block mr-2">Pencarian</label>
-              <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Kecamatan Anda">
+              <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Kecamata Anda">
               <button type="submit" class="btn btn-primary mb-1">Cari</button>
           </div>
       </form>
