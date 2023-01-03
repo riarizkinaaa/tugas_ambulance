@@ -12,7 +12,7 @@ class KecamatanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $kecamatan=Kecamatan::all();
         return view('kecamatan.index1',compact('kecamatan'));
@@ -36,12 +36,14 @@ class KecamatanController extends Controller
      */
     public function store(Request $request)
     {
+        // 
     }
     
     public function search(Request $request)
-    {
+    { 
+
         $keyword = $request->search;
-        $kecamatan = kecamatan::where('nama_kec', 'like', "%" . $keyword . "%")->paginate(10);
+        $kecamatan = kecamatan::where('nama_kec', 'like', "%" . $keyword . "%")->paginate(100);
         return view('kecamatan.index1', compact('kecamatan'))->with('i', (request()->input('page', 1) - 1) * 5);
        
     }

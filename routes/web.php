@@ -16,11 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('/', [TestController::class,"index"])->name('home');
-Route::resource('/about', KecamatanController::class);
+Route::resource('/index', KecamatanController::class);
 // Route::get('/about1', [KecamatanController::class,"index"]);
-
 Route::get('/',function(){
-    return view('welcome');
+    return view('kecamatan.home');
 });
 
 Route::get('/search', [KecamatanController::class, 'search'])->name('search');

@@ -13,12 +13,10 @@
 
     
     <div class="row gy-4">
-      
       @foreach ($kecamatan as $kec)
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card-item">
           <div class="row">
-            
             <div class="col-xl-7 d-flex align-items-center">
               <div class="card-body">
                 <h4 class="card-title">Kecamatan:&ensp;{{ $kec->nama_kec }}</h4>
@@ -28,13 +26,17 @@
                 <i class="bi bi-telephone-fill">&ensp;{{ $kec->no_hp2 }}</i>
               </div>
             </div>
+            
           </div>
         </div>
-      </div><!-- End Card Item -->
+      </div>
       @endforeach
 
       
-</section><!-- End Constructions Section -->
+
+
+ 
+</section>
 
         
                   
